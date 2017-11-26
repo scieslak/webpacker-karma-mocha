@@ -8,3 +8,11 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+class Application {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+export default Application

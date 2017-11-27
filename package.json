@@ -6,9 +6,11 @@
   },
   "dependencies": {
     "@rails/webpacker": "^3.0.2",
-    "coffeescript": "1.12.7"
+    "coffeescript": "1.12.7",
+    "karma-coverage": "^1.1.1"
   },
   "devDependencies": {
+    "babel-plugin-__coverage__": "^11.0.0",
     "chai": "^4.1.2",
     "karma": "^1.7.1",
     "karma-chai": "^0.1.0",

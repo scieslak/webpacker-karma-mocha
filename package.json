@@ -2,7 +2,7 @@
   "name": "webpacker-karma-mocha",
   "private": true,
   "scripts": {
-    "test": "NODE_ENV=test karma start ./app/javascript/test/karma.conf.js"
+    "test": "bundle exec rails test && NODE_ENV=test karma start ./app/javascript/test/karma.conf.js"
   },
   "dependencies": {
     "@rails/webpacker": "^3.0.2",
@@ -19,6 +19,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-webpack": "^2.0.6",
     "mocha": "^4.0.1",
+    "progress-bar-webpack-plugin": "^1.10.0",
     "webpack-dev-server": "^2.9.4",
     "webpack-merge": "^4.1.1"
   }

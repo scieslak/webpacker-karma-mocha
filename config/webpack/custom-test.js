@@ -1,3 +1,7 @@
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 module.exports = {
-  devtool: "eval"
+  devtool: "eval",
+  plugins: [
+    new ProgressBarPlugin()
+  ]
 }

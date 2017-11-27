@@ -1,11 +1,25 @@
 {
   "name": "webpacker-karma-mocha",
   "private": true,
+  "scripts": {
+    "test": "NODE_ENV=test karma start ./app/javascript/test/karma.conf.js"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.0.2",
-    "coffeescript": "1.12.7"
+    "coffeescript": "1.12.7",
+    "karma-coverage": "^1.1.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.9.4"
+    "babel-plugin-__coverage__": "^11.0.0",
+    "chai": "^4.1.2",
+    "karma": "^1.7.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^2.0.6",
+    "mocha": "^4.0.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1"
   }
 }

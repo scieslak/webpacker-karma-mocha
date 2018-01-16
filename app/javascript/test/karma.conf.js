@@ -1,5 +1,6 @@
 process.env.BABEL_ENV = 'test'
 const webpackConfig = require('../../../config/webpack/test.js')
+delete webpackConfig.entry
 
 module.exports = function(config) {
   config.set({
@@ -22,7 +23,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.ERROR_INFO,
     autoWatch: false,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
     singleRun: true,
     concurrency: Infinity
   })
